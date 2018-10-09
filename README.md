@@ -1,5 +1,5 @@
 # ECE411 Practicum 
-The main goal of this project is to gain project management experience.
+The main goal of this project is to gain project management experience, and pass ECE411.
 
 ### Resources
 - [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
