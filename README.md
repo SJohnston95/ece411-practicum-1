@@ -9,3 +9,5 @@ The main goal of this project is to gain project management experience, and pass
 - [Meeting Notes](https://docs.google.com/document/d/19kvDTP8waEN3RQ6yVrNDx6z7Xe4eh67vW1i40oPSDoY/edit?usp=sharing)
 - [Bill of Materials](https://docs.google.com/spreadsheets/d/1W5p3Xew4WHdP0dK88rSV139m2ax4RcH9-pE1J-V8YP8/edit?usp=sharing)
 
+###AVR Pin programming
+http://www.avr-tutorials.com/digital/about-avr-8-bit-microcontrollers-digital-io-ports
