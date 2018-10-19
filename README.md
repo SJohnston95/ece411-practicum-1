@@ -10,7 +10,8 @@ The main goal of this project is to gain project management experience, and pass
 - [Bill of Materials](https://docs.google.com/spreadsheets/d/1W5p3Xew4WHdP0dK88rSV139m2ax4RcH9-pE1J-V8YP8/edit?usp=sharing)
 
 ### AVR Pin programming
-How to connect the ATmega to the AVR Dragon can be found in the [pdf for Atmel
+How to connect the ATmega to the AVR Dragon can be found on page 62 of the [pdf for Atmel
 AVR
 Dragon](https://github.com/philiparola/ece411-practicum/blob/master/datasheets/atmel-42723-avr-dragon_userguide.pdf)
-http://www.avr-tutorials.com/digital/about-avr-8-bit-microcontrollers-digital-io-ports
+
+[Code to program the ATmega](http://www.avr-tutorials.com/digital/about-avr-8-bit-microcontrollers-digital-io-ports)
