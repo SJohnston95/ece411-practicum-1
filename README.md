@@ -19,3 +19,6 @@ Dragon](https://github.com/philiparola/ece411-practicum/blob/master/datasheets/a
 
 ADC contact
 http://maxembedded.com/2011/06/the-adc-of-the-avr/
+
+SPI connections
+http://maxembedded.com/2013/11/the-spi-of-the-avr/#Master_Slave
