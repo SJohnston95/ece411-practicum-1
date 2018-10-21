@@ -15,3 +15,7 @@ AVR
 Dragon](https://github.com/philiparola/ece411-practicum/blob/master/datasheets/atmel-42723-avr-dragon_userguide.pdf)
 
 [Code to program the ATmega](http://www.avr-tutorials.com/digital/about-avr-8-bit-microcontrollers-digital-io-ports)
+
+
+ADC contact
+http://maxembedded.com/2011/06/the-adc-of-the-avr/
