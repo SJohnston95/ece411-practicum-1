@@ -973,6 +973,116 @@ CAP-09321</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-lstb" urn="urn:adsk.eagle:library:162">
+<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
+Naming:&lt;p&gt;
+MA = male&lt;p&gt;
+# contacts - # rows&lt;p&gt;
+W = angled&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MA03-2" urn="urn:adsk.eagle:footprint:8265/1" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-3.175" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="-3.81" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="4.064" y="0.635" size="1.27" layer="21" ratio="10">6</text>
+<text x="-1.27" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="MA03-2" urn="urn:adsk.eagle:package:8334/1" type="box" library_version="1">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="MA03-2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="MA03-2" urn="urn:adsk.eagle:symbol:8264/1" library_version="1">
+<wire x1="3.81" y1="-5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.27" y2="-2.54" width="0.6096" layer="94"/>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="4" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="6" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MA03-2" urn="urn:adsk.eagle:component:8382/1" prefix="SV" uservalue="yes" library_version="1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="MA03-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA03-2">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+<connect gate="1" pin="5" pad="5"/>
+<connect gate="1" pin="6" pad="6"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8334/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1024,6 +1134,9 @@ CAP-09321</description>
 <part name="X_9" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+4" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 <part name="P+5" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
+<part name="ISP" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
+<part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="P+6" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1062,9 +1175,9 @@ CAP-09321</description>
 <attribute name="VALUE" x="193.0453" y="83.8253" size="2.541340625" layer="96" rot="R180"/>
 </instance>
 <instance part="X_1" gate="G$1" x="165.1" y="63.5" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="45.72" y="2.54" smashed="yes"/>
-<instance part="P+1" gate="VCC" x="88.9" y="22.86" smashed="yes">
-<attribute name="VALUE" x="87.376" y="23.876" size="1.27" layer="96"/>
+<instance part="X_2" gate="G$1" x="50.8" y="2.54" smashed="yes"/>
+<instance part="P+1" gate="VCC" x="86.36" y="22.86" smashed="yes">
+<attribute name="VALUE" x="84.836" y="23.876" size="1.27" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="132.08" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="130.7084" y="57.15" size="1.778" layer="95" rot="R90"/>
@@ -1173,6 +1286,14 @@ CAP-09321</description>
 <instance part="P+5" gate="VCC" x="-35.56" y="35.56" smashed="yes">
 <attribute name="VALUE" x="-37.084" y="36.576" size="1.27" layer="96"/>
 </instance>
+<instance part="ISP" gate="1" x="38.1" y="-22.86" smashed="yes">
+<attribute name="VALUE" x="34.29" y="-30.48" size="1.778" layer="96"/>
+<attribute name="NAME" x="34.29" y="-17.018" size="1.778" layer="95"/>
+</instance>
+<instance part="X_10" gate="G$1" x="53.34" y="-27.94" smashed="yes"/>
+<instance part="P+6" gate="VCC" x="53.34" y="-15.24" smashed="yes">
+<attribute name="VALUE" x="51.816" y="-14.224" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1243,8 +1364,8 @@ CAP-09321</description>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="LDAC"/>
-<wire x1="53.34" y1="5.08" x2="45.72" y2="5.08" width="0.127" layer="91"/>
-<wire x1="45.72" y1="5.08" x2="45.72" y2="2.54" width="0.127" layer="91"/>
+<wire x1="53.34" y1="5.08" x2="50.8" y2="5.08" width="0.127" layer="91"/>
+<wire x1="50.8" y1="5.08" x2="50.8" y2="2.54" width="0.127" layer="91"/>
 <pinref part="X_2" gate="G$1" pin="0"/>
 </segment>
 <segment>
@@ -1253,6 +1374,12 @@ CAP-09321</description>
 <pinref part="X_9" gate="G$1" pin="0"/>
 <wire x1="-33.02" y1="45.72" x2="-35.56" y2="45.72" width="0.127" layer="91"/>
 <wire x1="-35.56" y1="45.72" x2="-35.56" y2="43.18" width="0.127" layer="91"/>
+</segment>
+<segment>
+<pinref part="ISP" gate="1" pin="1"/>
+<wire x1="45.72" y1="-25.4" x2="53.34" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-25.4" x2="53.34" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="X_10" gate="G$1" pin="0"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1430,9 +1557,9 @@ CAP-09321</description>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="VREF"/>
-<wire x1="83.82" y1="17.78" x2="88.9" y2="17.78" width="0.127" layer="91"/>
+<wire x1="83.82" y1="17.78" x2="86.36" y2="17.78" width="0.127" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="88.9" y1="17.78" x2="88.9" y2="20.32" width="0.127" layer="91"/>
+<wire x1="86.36" y1="17.78" x2="86.36" y2="20.32" width="0.127" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
@@ -1440,6 +1567,12 @@ CAP-09321</description>
 <pinref part="ATMEGA48A" gate="IC" pin="AVCC"/>
 <wire x1="-35.56" y1="30.48" x2="-33.02" y2="30.48" width="0.127" layer="91"/>
 <wire x1="-33.02" y1="30.48" x2="-33.02" y2="35.56" width="0.127" layer="91"/>
+</segment>
+<segment>
+<pinref part="ISP" gate="1" pin="5"/>
+<wire x1="45.72" y1="-20.32" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-20.32" x2="53.34" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -1449,6 +1582,12 @@ CAP-09321</description>
 <pinref part="ADC" gate="G$1" pin="DOUT"/>
 <wire x1="35.56" y1="15.24" x2="35.56" y2="63.5" width="0.127" layer="91"/>
 <wire x1="35.56" y1="63.5" x2="53.34" y2="63.5" width="0.127" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-12.7" x2="27.94" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="ISP" gate="1" pin="6"/>
+<wire x1="27.94" y1="-20.32" x2="30.48" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="35.56" y="15.24"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -1462,6 +1601,12 @@ CAP-09321</description>
 <wire x1="53.34" y1="10.16" x2="38.1" y2="10.16" width="0.127" layer="91"/>
 <wire x1="38.1" y1="10.16" x2="38.1" y2="12.7" width="0.127" layer="91"/>
 <junction x="38.1" y="12.7"/>
+<wire x1="38.1" y1="10.16" x2="38.1" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-12.7" x2="48.26" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-12.7" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="ISP" gate="1" pin="3"/>
+<wire x1="48.26" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="38.1" y="10.16"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -1475,6 +1620,12 @@ CAP-09321</description>
 <wire x1="53.34" y1="15.24" x2="40.64" y2="15.24" width="0.127" layer="91"/>
 <wire x1="40.64" y1="15.24" x2="40.64" y2="17.78" width="0.127" layer="91"/>
 <junction x="40.64" y="17.78"/>
+<wire x1="40.64" y1="15.24" x2="40.64" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-10.16" x2="25.4" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-10.16" x2="25.4" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="ISP" gate="1" pin="4"/>
+<wire x1="25.4" y1="-22.86" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="40.64" y="15.24"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -1491,6 +1642,17 @@ CAP-09321</description>
 <pinref part="ATMEGA48A" gate="IC" pin="PB6(XTAL1/TOSC1/PCINT6)"/>
 <pinref part="DAC" gate="A" pin="CS"/>
 <wire x1="33.02" y1="20.32" x2="53.34" y2="20.32" width="0.127" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="ATMEGA48A" gate="IC" pin="PC6(!RESET!/PCINT14)"/>
+<wire x1="33.02" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="43.18" x2="43.18" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-7.62" x2="20.32" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="ISP" gate="1" pin="2"/>
+<wire x1="20.32" y1="-25.4" x2="30.48" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
