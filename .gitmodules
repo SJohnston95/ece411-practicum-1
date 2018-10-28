@@ -1,0 +1,3 @@
+[submodule "src/examples/ultimate_voice_changer"]
+	path = src/examples/ultimate_voice_changer
+	url = https://github.com/andygrove/ultimate_voice_changer
