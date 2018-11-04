@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1082,6 +1096,260 @@ at 30/07/2012 11:22:31</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.02X.02" urn="urn:adsk.eagle:footprint:37959/1" library_version="1">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03" urn="urn:adsk.eagle:footprint:37960/1" library_version="1">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05" urn="urn:adsk.eagle:footprint:37961/1" library_version="1">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04" urn="urn:adsk.eagle:footprint:37962/1" library_version="1">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.04" x 0.04"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH" urn="urn:adsk.eagle:footprint:37963/1" library_version="1">
+<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area:0.015"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="PAD.02X.02" urn="urn:adsk.eagle:package:38284/1" type="box" library_version="1">
+<description>Electrically Conductive Pad 0.02" Square
+Used as a test point connection for pogo pins or other debugging tools. 
+Specifications:
+Area: 0.02" x 0.02"
+
+Example device(s):
+TEST_POINT
+</description>
+<packageinstances>
+<packageinstance name="PAD.02X.02"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.03" urn="urn:adsk.eagle:package:38286/1" type="box" library_version="1">
+<description>Electrically Conductive Pad 0.03" Circle
+Used as a test point connection for pogo pins or other debugging tools. 
+Specifications:
+Area: 0.03" x 0.03"
+
+Example device(s):
+TEST_POINT
+</description>
+<packageinstances>
+<packageinstance name="PAD.03X.03"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.05" urn="urn:adsk.eagle:package:38285/1" type="box" library_version="1">
+<description>Electrically Conductive Pad 0.05" Circle
+Used as a test point connection for pogo pins or other debugging tools. 
+Specifications:
+Area: 0.05" x 0.05"
+
+Example device(s):
+TEST_POINT
+</description>
+<packageinstances>
+<packageinstance name="PAD.03X.05"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.04" urn="urn:adsk.eagle:package:38287/1" type="box" library_version="1">
+<description>Electrically Conductive Pad 0.04" Circle
+Used as a test point connection for pogo pins or other debugging tools. 
+Specifications:
+Area: 0.04" x 0.04"
+
+Example device(s):
+TEST_POINT
+</description>
+<packageinstances>
+<packageinstance name="PAD.03X.04"/>
+</packageinstances>
+</package3d>
+<package3d name="TP_15TH" urn="urn:adsk.eagle:package:38288/1" type="box" library_version="1">
+<description>Electrically Conductive Via 0.015" Drill
+Used as a test point connection for pogo pins or other debugging tools. 
+Specifications:
+Area:0.015"
+
+Example device(s):
+TEST_POINT
+</description>
+<packageinstances>
+<packageinstance name="TP_15TH"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TEST-POINT" urn="urn:adsk.eagle:symbol:37958/1" library_version="1">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST-POINT" urn="urn:adsk.eagle:component:38391/1" prefix="TP" library_version="1">
+<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
+&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38284/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38286/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38285/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38287/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38288/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1134,6 +1402,10 @@ at 30/07/2012 11:22:31</description>
 <part name="P+6" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
 <part name="ATMEGA48A" library="ece411_fixes" deviceset="ATMEGA48/88/168/328-PU(DIP28)" device="PU" value="uC"/>
 <part name="DAC" library="Microchip_By_element14_Batch_1" deviceset="MCP4921-E/P" device=""/>
+<part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
+<part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="R15" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1155,142 +1427,157 @@ at 30/07/2012 11:22:31</description>
 <text x="15.24" y="-2.54" size="1.778" layer="97">ISP Programming</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="-55.88" y="-53.34" smashed="yes">
+<instance part="FRAME1" gate="G$1" x="-55.88" y="-53.34">
 <attribute name="DRAWING_NAME" x="161.29" y="-38.1" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="161.29" y="-43.18" size="2.286" layer="94"/>
 <attribute name="SHEET" x="174.625" y="-48.26" size="2.54" layer="94"/>
 </instance>
-<instance part="ADC" gate="G$1" x="68.58" y="60.96" smashed="yes" rot="R180">
+<instance part="ADC" gate="G$1" x="68.58" y="60.96" rot="R180">
 <attribute name="NAME" x="78.74" y="83.82" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="68.58" y="83.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="MIC_JACK" gate="G$1" x="182.88" y="73.66" smashed="yes" rot="R180">
+<instance part="MIC_JACK" gate="G$1" x="182.88" y="73.66" rot="R180">
 <attribute name="NAME" x="193.0489" y="88.89335" size="2.54221875" layer="95" rot="R180"/>
 <attribute name="VALUE" x="193.0453" y="83.8253" size="2.541340625" layer="96" rot="R180"/>
 </instance>
-<instance part="X_1" gate="G$1" x="165.1" y="63.5" smashed="yes"/>
-<instance part="X_2" gate="G$1" x="48.26" y="2.54" smashed="yes"/>
-<instance part="P+1" gate="VCC" x="48.26" y="33.02" smashed="yes">
+<instance part="X_1" gate="G$1" x="165.1" y="63.5"/>
+<instance part="X_2" gate="G$1" x="48.26" y="2.54"/>
+<instance part="P+1" gate="VCC" x="48.26" y="33.02">
 <attribute name="VALUE" x="46.736" y="34.036" size="1.27" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="132.08" y="60.96" smashed="yes" rot="R90">
+<instance part="R1" gate="G$1" x="132.08" y="60.96" rot="R90">
 <attribute name="NAME" x="130.7084" y="57.15" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="135.001" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="132.08" y="86.36" smashed="yes" rot="R90">
+<instance part="R2" gate="G$1" x="132.08" y="86.36" rot="R90">
 <attribute name="NAME" x="130.7084" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="135.001" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R3" gate="G$1" x="121.92" y="86.36" smashed="yes" rot="R90">
+<instance part="R3" gate="G$1" x="121.92" y="86.36" rot="R90">
 <attribute name="NAME" x="120.5484" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="124.841" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R4" gate="G$1" x="121.92" y="60.96" smashed="yes" rot="R90">
+<instance part="R4" gate="G$1" x="121.92" y="60.96" rot="R90">
 <attribute name="NAME" x="120.5484" y="57.15" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="124.841" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$1" x="144.78" y="60.96" smashed="yes" rot="R90">
+<instance part="R5" gate="G$1" x="144.78" y="60.96" rot="R90">
 <attribute name="NAME" x="143.4084" y="57.15" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="147.701" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="106.68" y="86.36" smashed="yes" rot="R90">
+<instance part="R6" gate="G$1" x="106.68" y="86.36" rot="R90">
 <attribute name="NAME" x="105.3084" y="82.55" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="109.601" y="82.55" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="106.68" y="60.96" smashed="yes" rot="R90">
+<instance part="R7" gate="G$1" x="106.68" y="60.96" rot="R90">
 <attribute name="NAME" x="105.3084" y="57.15" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="109.601" y="57.15" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="T1" gate="G$1" x="124.46" y="73.66" smashed="yes" rot="R180">
+<instance part="T1" gate="G$1" x="124.46" y="73.66" rot="R180">
 <attribute name="NAME" x="139.7" y="66.04" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="134.62" y="68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="T2" gate="G$1" x="109.22" y="73.66" smashed="yes" rot="R180">
+<instance part="T2" gate="G$1" x="109.22" y="73.66" rot="R180">
 <attribute name="NAME" x="119.38" y="66.04" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="119.38" y="68.58" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C1" gate="G$1" x="137.16" y="73.66" smashed="yes" rot="R270">
+<instance part="C1" gate="G$1" x="137.16" y="73.66" rot="R270">
 <attribute name="NAME" x="140.081" y="72.136" size="1.778" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="135.001" y="72.136" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
-<instance part="C2" gate="G$1" x="99.06" y="86.36" smashed="yes" rot="R180">
+<instance part="C2" gate="G$1" x="99.06" y="86.36" rot="R180">
 <attribute name="NAME" x="97.536" y="83.439" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="97.536" y="88.519" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="X_4" gate="G$1" x="144.78" y="55.88" smashed="yes"/>
-<instance part="X_5" gate="G$1" x="139.7" y="88.9" smashed="yes"/>
-<instance part="R8" gate="G$1" x="116.84" y="22.86" smashed="yes" rot="R270">
+<instance part="X_4" gate="G$1" x="144.78" y="55.88"/>
+<instance part="X_5" gate="G$1" x="139.7" y="88.9"/>
+<instance part="R8" gate="G$1" x="116.84" y="22.86" rot="R270">
 <attribute name="NAME" x="118.2116" y="26.67" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.919" y="26.67" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R9" gate="G$1" x="116.84" y="-2.54" smashed="yes" rot="R270">
+<instance part="R9" gate="G$1" x="116.84" y="-2.54" rot="R270">
 <attribute name="NAME" x="118.2116" y="1.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="113.919" y="1.27" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R10" gate="G$1" x="127" y="-2.54" smashed="yes" rot="R270">
+<instance part="R10" gate="G$1" x="127" y="-2.54" rot="R270">
 <attribute name="NAME" x="128.3716" y="1.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="124.079" y="1.27" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R11" gate="G$1" x="127" y="22.86" smashed="yes" rot="R270">
+<instance part="R11" gate="G$1" x="127" y="22.86" rot="R270">
 <attribute name="NAME" x="128.3716" y="26.67" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="124.079" y="26.67" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R12" gate="G$1" x="104.14" y="5.08" smashed="yes" rot="R90">
+<instance part="R12" gate="G$1" x="104.14" y="5.08" rot="R90">
 <attribute name="NAME" x="102.7684" y="1.27" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="107.061" y="1.27" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R13" gate="G$1" x="142.24" y="-2.54" smashed="yes" rot="R270">
+<instance part="R13" gate="G$1" x="142.24" y="-2.54" rot="R270">
 <attribute name="NAME" x="143.6116" y="1.27" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="139.319" y="1.27" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R14" gate="G$1" x="142.24" y="22.86" smashed="yes" rot="R270">
+<instance part="R14" gate="G$1" x="142.24" y="22.86" rot="R270">
 <attribute name="NAME" x="143.6116" y="26.67" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="139.319" y="26.67" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="T3" gate="G$1" x="124.46" y="10.16" smashed="yes">
+<instance part="T3" gate="G$1" x="124.46" y="10.16">
 <attribute name="NAME" x="109.22" y="17.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="114.3" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="T4" gate="G$1" x="139.7" y="10.16" smashed="yes">
+<instance part="T4" gate="G$1" x="139.7" y="10.16">
 <attribute name="NAME" x="129.54" y="17.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="129.54" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="111.76" y="10.16" smashed="yes" rot="R90">
+<instance part="C3" gate="G$1" x="111.76" y="10.16" rot="R90">
 <attribute name="NAME" x="108.839" y="11.684" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="113.919" y="11.684" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="C4" gate="G$1" x="149.86" y="-2.54" smashed="yes">
+<instance part="C4" gate="G$1" x="149.86" y="-2.54">
 <attribute name="NAME" x="151.384" y="0.381" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="151.384" y="-4.699" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="X_6" gate="G$1" x="104.14" y="0" smashed="yes"/>
-<instance part="X_7" gate="G$1" x="116.84" y="-12.7" smashed="yes"/>
-<instance part="X_8" gate="G$1" x="48.26" y="76.2" smashed="yes"/>
-<instance part="P+2" gate="VCC" x="48.26" y="48.26" smashed="yes">
+<instance part="X_6" gate="G$1" x="104.14" y="0"/>
+<instance part="X_7" gate="G$1" x="116.84" y="-12.7"/>
+<instance part="X_8" gate="G$1" x="48.26" y="76.2"/>
+<instance part="P+2" gate="VCC" x="48.26" y="48.26">
 <attribute name="VALUE" x="46.736" y="49.276" size="1.27" layer="96"/>
 </instance>
-<instance part="X_9" gate="G$1" x="-43.18" y="43.18" smashed="yes"/>
-<instance part="P+4" gate="VCC" x="129.54" y="66.04" smashed="yes">
+<instance part="X_9" gate="G$1" x="-43.18" y="43.18"/>
+<instance part="P+4" gate="VCC" x="129.54" y="66.04">
 <attribute name="VALUE" x="128.016" y="67.056" size="1.27" layer="96"/>
 </instance>
-<instance part="P+5" gate="VCC" x="-38.1" y="35.56" smashed="yes">
+<instance part="P+5" gate="VCC" x="-38.1" y="35.56">
 <attribute name="VALUE" x="-39.624" y="36.576" size="1.27" layer="96"/>
 </instance>
-<instance part="ISP" gate="1" x="38.1" y="-22.86" smashed="yes">
+<instance part="ISP" gate="1" x="38.1" y="-22.86">
 <attribute name="VALUE" x="34.29" y="-30.48" size="1.778" layer="96"/>
 <attribute name="NAME" x="34.29" y="-17.018" size="1.778" layer="95"/>
 </instance>
-<instance part="X_10" gate="G$1" x="53.34" y="-27.94" smashed="yes"/>
-<instance part="P+6" gate="VCC" x="53.34" y="-15.24" smashed="yes">
+<instance part="X_10" gate="G$1" x="53.34" y="-27.94"/>
+<instance part="P+6" gate="VCC" x="53.34" y="-15.24">
 <attribute name="VALUE" x="51.816" y="-14.224" size="1.27" layer="96"/>
 </instance>
-<instance part="ATMEGA48A" gate="IC" x="0" y="25.4" smashed="yes" rot="R180">
+<instance part="ATMEGA48A" gate="IC" x="0" y="25.4" rot="R180">
 <attribute name="NAME" x="-30.48" y="48.895" size="2.54" layer="95" ratio="12"/>
 <attribute name="VALUE" x="25.4" y="49.53" size="2.54" layer="96" ratio="12"/>
 </instance>
-<instance part="DAC" gate="A" x="68.58" y="20.32" smashed="yes">
+<instance part="DAC" gate="A" x="68.58" y="20.32">
 <attribute name="NAME" x="76.5556" y="34.5186" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="55.8038" y="34.2392" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="TP1" gate="G$1" x="93.98" y="43.18">
+<attribute name="NAME" x="91.44" y="45.72" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="91.44" y="40.64" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="TP2" gate="G$1" x="76.2" y="101.6" rot="R180">
+<attribute name="NAME" x="78.74" y="99.06" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="78.74" y="104.14" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="P+3" gate="VCC" x="-10.16" y="0">
+<attribute name="VALUE" x="-12.7" y="0" size="1.27" layer="96" rot="R180"/>
+</instance>
+<instance part="R15" gate="G$1" x="5.08" y="-7.62">
+<attribute name="NAME" x="1.27" y="-6.2484" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1.27" y="-10.541" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1431,8 +1718,13 @@ at 30/07/2012 11:22:31</description>
 <wire x1="99.06" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <junction x="99.06" y="78.74"/>
 <pinref part="ADC" gate="G$1" pin="CH7"/>
-<wire x1="83.82" y1="78.74" x2="99.06" y2="78.74" width="0.127" layer="91"/>
+<wire x1="83.82" y1="78.74" x2="86.36" y2="78.74" width="0.127" layer="91"/>
 <junction x="106.68" y="78.74"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="78.74" x2="99.06" y2="78.74" width="0.127" layer="91"/>
+<wire x1="86.36" y1="78.74" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
+<junction x="86.36" y="78.74"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1482,9 +1774,14 @@ at 30/07/2012 11:22:31</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="DAC" gate="A" pin="VOUTA"/>
-<wire x1="86.36" y1="27.94" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="22.86" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 <junction x="104.14" y="10.16"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="43.18" x2="93.98" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="22.86" x2="86.36" y2="22.86" width="0.1524" layer="91"/>
+<junction x="86.36" y="22.86"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1593,6 +1890,12 @@ at 30/07/2012 11:22:31</description>
 <wire x1="48.26" y1="22.86" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
 <junction x="48.26" y="27.94"/>
 </segment>
+<segment>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -1674,6 +1977,9 @@ at 30/07/2012 11:22:31</description>
 <pinref part="ISP" gate="1" pin="2"/>
 <wire x1="20.32" y1="-25.4" x2="30.48" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="ATMEGA48A" gate="IC" pin="PC6(!RESET!/PCINT14)"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="20.32" y="-7.62"/>
 </segment>
 </net>
 </nets>
