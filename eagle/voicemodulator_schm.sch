@@ -3322,6 +3322,8 @@ Source: www.kingbright.com</description>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
+<part name="MIC_JACK1" library="SJ1-3523N" deviceset="SJ1-3523N" device=""/>
+<part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3507,6 +3509,11 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="-42.164" y="30.988" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-40.005" y="30.988" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="MIC_JACK1" gate="G$1" x="182.88" y="5.08" rot="R180">
+<attribute name="NAME" x="193.0489" y="-2.54665" size="2.54221875" layer="95" rot="R180"/>
+<attribute name="VALUE" x="193.0453" y="15.2453" size="2.541340625" layer="96" rot="R180"/>
+</instance>
+<instance part="X_3" gate="G$1" x="167.64" y="-7.62"/>
 </instances>
 <busses>
 </busses>
@@ -3605,6 +3612,11 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="7.62" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <junction x="48.26" y="7.62"/>
+</segment>
+<segment>
+<pinref part="MIC_JACK1" gate="G$1" pin="1"/>
+<pinref part="X_3" gate="G$1" pin="0"/>
+<wire x1="167.64" y1="2.54" x2="167.64" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3733,9 +3745,16 @@ Source: www.kingbright.com</description>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="2.54" x2="149.86" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="5.08" x2="142.24" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="5.08" x2="165.1" y2="5.08" width="0.127" layer="91"/>
+<wire x1="149.86" y1="5.08" x2="162.56" y2="5.08" width="0.127" layer="91"/>
 <junction x="149.86" y="5.08"/>
 <junction x="142.24" y="5.08"/>
+<pinref part="MIC_JACK1" gate="G$1" pin="3"/>
+<wire x1="162.56" y1="5.08" x2="165.1" y2="5.08" width="0.127" layer="91"/>
+<wire x1="167.64" y1="5.08" x2="165.1" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="MIC_JACK1" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="5.08" x2="162.56" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="7.62" x2="167.64" y2="7.62" width="0.1524" layer="91"/>
+<junction x="162.56" y="5.08"/>
 </segment>
 </net>
 <net name="N$12" class="0">
