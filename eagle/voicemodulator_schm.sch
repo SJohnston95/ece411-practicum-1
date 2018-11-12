@@ -3326,6 +3326,8 @@ Source: www.kingbright.com</description>
 <part name="R16" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="R17" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="IC1" library="voicemod_parts" deviceset="ATMEGA48/88/168/328-PU(DIP28)" device="PU"/>
+<part name="R18" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
+<part name="R19" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3356,11 +3358,11 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="78.74" y="83.82" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="68.58" y="83.82" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="MIC_JACK" gate="G$1" x="182.88" y="73.66" rot="R180">
-<attribute name="NAME" x="193.0489" y="88.89335" size="2.54221875" layer="95" rot="R180"/>
-<attribute name="VALUE" x="193.0453" y="83.8253" size="2.541340625" layer="96" rot="R180"/>
+<instance part="MIC_JACK" gate="G$1" x="187.96" y="73.66" rot="R180">
+<attribute name="NAME" x="198.1289" y="88.89335" size="2.54221875" layer="95" rot="R180"/>
+<attribute name="VALUE" x="198.1253" y="83.8253" size="2.541340625" layer="96" rot="R180"/>
 </instance>
-<instance part="X_1" gate="G$1" x="165.1" y="63.5"/>
+<instance part="X_1" gate="G$1" x="172.72" y="58.42"/>
 <instance part="X_2" gate="G$1" x="48.26" y="2.54"/>
 <instance part="P+1" gate="VCC" x="48.26" y="40.64">
 <attribute name="VALUE" x="46.736" y="41.656" size="1.27" layer="96"/>
@@ -3524,6 +3526,14 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="-12.7" y="28.575" size="2.54" layer="95" ratio="12"/>
 <attribute name="VALUE" x="-12.7" y="31.75" size="2.54" layer="96" ratio="12"/>
 </instance>
+<instance part="R18" gate="G$1" x="160.02" y="73.66" rot="R180">
+<attribute name="NAME" x="163.83" y="72.2884" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="163.83" y="76.581" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R19" gate="G$1" x="127" y="45.72" rot="R180">
+<attribute name="NAME" x="130.81" y="44.3484" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="130.81" y="48.641" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3532,8 +3542,7 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="MIC_JACK" gate="G$1" pin="1"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
-<wire x1="167.64" y1="71.12" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="71.12" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="71.12" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X_4" gate="G$1" pin="0"/>
@@ -3631,18 +3640,13 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="MIC_JACK" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="76.2" x2="154.94" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="76.2" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="MIC_JACK" gate="G$1" pin="3"/>
-<wire x1="154.94" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
 <junction x="144.78" y="73.66"/>
-<junction x="154.94" y="73.66"/>
+<wire x1="154.94" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3675,6 +3679,10 @@ Source: www.kingbright.com</description>
 <wire x1="86.36" y1="78.74" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="101.6" x2="76.2" y2="101.6" width="0.1524" layer="91"/>
 <junction x="86.36" y="78.74"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="121.92" y1="45.72" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="48.26" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3971,6 +3979,22 @@ Source: www.kingbright.com</description>
 <junction x="104.14" y="10.16"/>
 <wire x1="96.52" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="MIC_JACK" gate="G$1" pin="3"/>
+<pinref part="MIC_JACK" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="76.2" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<junction x="170.18" y="73.66"/>
+<wire x1="170.18" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="73.66" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
