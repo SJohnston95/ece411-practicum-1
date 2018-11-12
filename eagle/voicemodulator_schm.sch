@@ -855,133 +855,6 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="ece411_fixes">
-<packages>
-<package name="DIL28">
-<wire x1="-17.78" y1="-6.35" x2="17.78" y2="-6.35" width="0.2" layer="21"/>
-<wire x1="17.78" y1="-6.35" x2="17.78" y2="6.35" width="0.2" layer="21"/>
-<wire x1="17.78" y1="6.35" x2="-17.78" y2="6.35" width="0.2" layer="21"/>
-<wire x1="-17.78" y1="6.35" x2="-17.78" y2="1.27" width="0.2" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-16.51" y2="1.27" width="0.2" layer="21"/>
-<wire x1="-16.51" y1="1.27" x2="-16.51" y2="-1.27" width="0.2" layer="21"/>
-<wire x1="-16.51" y1="-1.27" x2="-17.78" y2="-1.27" width="0.2" layer="21"/>
-<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-6.35" width="0.2" layer="21"/>
-<pad name="1" x="-16.51" y="-7.62" drill="0.889" diameter="1.524" shape="square"/>
-<pad name="2" x="-13.97" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="3" x="-11.43" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="4" x="-8.89" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="5" x="-6.35" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="6" x="-3.81" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="7" x="-1.27" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="8" x="1.27" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="9" x="3.81" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="10" x="6.35" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="11" x="8.89" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="12" x="11.43" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="13" x="13.97" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="14" x="16.51" y="-7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="15" x="16.51" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="16" x="13.97" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="17" x="11.43" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="18" x="8.89" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="19" x="6.35" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="20" x="3.81" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="21" x="1.27" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="22" x="-1.27" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="23" x="-3.81" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="24" x="-6.35" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="25" x="-8.89" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="26" x="-11.43" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="27" x="-13.97" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<pad name="28" x="-16.51" y="7.62" drill="0.889" diameter="1.524" shape="octagon"/>
-<text x="-13.97" y="1.27" size="1.524" layer="25">&gt;NAME</text>
-<text x="-13.97" y="-3.175" size="1.524" layer="27">&gt;VALUE</text>
-<text x="-18.0975" y="-6.35" size="1.27" layer="201" font="vector" ratio="12" rot="R90">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ATMEGA48/88/168/328-PU(DIP28)">
-<wire x1="-30.48" y1="22.86" x2="30.48" y2="22.86" width="0.254" layer="94"/>
-<wire x1="30.48" y1="22.86" x2="30.48" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-22.86" x2="-30.48" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="22.86" width="0.254" layer="94"/>
-<pin name="PB5(SCK/PCINT5)" x="-33.02" y="7.62" length="short" swaplevel="1"/>
-<pin name="PB7(XTAL2/TOSC2/PCINT7)" x="-33.02" y="2.54" length="short" swaplevel="1"/>
-<pin name="PB6(XTAL1/TOSC1/PCINT6)" x="-33.02" y="5.08" length="short" swaplevel="1"/>
-<pin name="AREF" x="33.02" y="-12.7" length="short" direction="pas" rot="R180"/>
-<pin name="AVCC" x="33.02" y="-10.16" length="short" direction="pwr" rot="R180"/>
-<pin name="PB4(MISO/PCINT4)" x="-33.02" y="10.16" length="short" swaplevel="1"/>
-<pin name="PB3(MOSI/OC2A/PCINT3)" x="-33.02" y="12.7" length="short" swaplevel="1"/>
-<pin name="PB2(SS/OC1B/PCINT2)" x="-33.02" y="15.24" length="short" swaplevel="1"/>
-<pin name="PB1(OC1A/PCINT1)" x="-33.02" y="17.78" length="short" swaplevel="1"/>
-<pin name="PB0(ICP1/CLKO/PCINT0)" x="-33.02" y="20.32" length="short" swaplevel="1"/>
-<pin name="PD7(AIN1/PCINT23)" x="33.02" y="2.54" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD6(AIN0/OC0A/PCINT22)" x="33.02" y="5.08" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD5(T1/OC0B/PCINT21)" x="33.02" y="7.62" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD4(T0/XCK/PCINT20)" x="33.02" y="10.16" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD3(INT1/OC2B/PCINT19)" x="33.02" y="12.7" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD2(INT0/PCINT18)" x="33.02" y="15.24" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD1(TXD/PCINT17)" x="33.02" y="17.78" length="short" swaplevel="1" rot="R180"/>
-<pin name="PD0(RXD/PCINT16)" x="33.02" y="20.32" length="short" swaplevel="1" rot="R180"/>
-<pin name="PC5(ADC5/SCL/PCINT13)" x="-33.02" y="-15.24" length="short" swaplevel="1"/>
-<pin name="PC4(ADC4/SDA/PCINT12)" x="-33.02" y="-12.7" length="short" swaplevel="1"/>
-<pin name="PC3(ADC3/PCINT11)" x="-33.02" y="-10.16" length="short" swaplevel="1"/>
-<pin name="PC2(ADC2/PCINT10)" x="-33.02" y="-7.62" length="short" swaplevel="1"/>
-<pin name="PC1(ADC1/PCINT9)" x="-33.02" y="-5.08" length="short" swaplevel="1"/>
-<pin name="PC0(ADC0/PCINT8)" x="-33.02" y="-2.54" length="short" swaplevel="1"/>
-<pin name="PC6(!RESET!/PCINT14)" x="-33.02" y="-17.78" length="short" swaplevel="1"/>
-<text x="12.7" y="-3.175" size="2.54" layer="95" ratio="12" rot="R180">&gt;NAME</text>
-<text x="12.7" y="-6.35" size="2.54" layer="96" ratio="12" rot="R180">&gt;VALUE</text>
-<pin name="GND0" x="33.02" y="-17.78" length="short" direction="pwr" swaplevel="1" rot="R180"/>
-<pin name="VCC" x="33.02" y="-15.24" length="short" direction="pwr" swaplevel="1" rot="R180"/>
-<pin name="GND1" x="33.02" y="-20.32" length="short" direction="pwr" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ATMEGA48/88/168/328-PU(DIP28)" prefix="IC" uservalue="yes">
-<gates>
-<gate name="IC" symbol="ATMEGA48/88/168/328-PU(DIP28)" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PU" package="DIL28">
-<connects>
-<connect gate="IC" pin="AREF" pad="21"/>
-<connect gate="IC" pin="AVCC" pad="20"/>
-<connect gate="IC" pin="GND0" pad="7"/>
-<connect gate="IC" pin="GND1" pad="22"/>
-<connect gate="IC" pin="PB0(ICP1/CLKO/PCINT0)" pad="14"/>
-<connect gate="IC" pin="PB1(OC1A/PCINT1)" pad="15"/>
-<connect gate="IC" pin="PB2(SS/OC1B/PCINT2)" pad="16"/>
-<connect gate="IC" pin="PB3(MOSI/OC2A/PCINT3)" pad="17"/>
-<connect gate="IC" pin="PB4(MISO/PCINT4)" pad="18"/>
-<connect gate="IC" pin="PB5(SCK/PCINT5)" pad="19"/>
-<connect gate="IC" pin="PB6(XTAL1/TOSC1/PCINT6)" pad="9"/>
-<connect gate="IC" pin="PB7(XTAL2/TOSC2/PCINT7)" pad="10"/>
-<connect gate="IC" pin="PC0(ADC0/PCINT8)" pad="23"/>
-<connect gate="IC" pin="PC1(ADC1/PCINT9)" pad="24"/>
-<connect gate="IC" pin="PC2(ADC2/PCINT10)" pad="25"/>
-<connect gate="IC" pin="PC3(ADC3/PCINT11)" pad="26"/>
-<connect gate="IC" pin="PC4(ADC4/SDA/PCINT12)" pad="27"/>
-<connect gate="IC" pin="PC5(ADC5/SCL/PCINT13)" pad="28"/>
-<connect gate="IC" pin="PC6(!RESET!/PCINT14)" pad="1"/>
-<connect gate="IC" pin="PD0(RXD/PCINT16)" pad="2"/>
-<connect gate="IC" pin="PD1(TXD/PCINT17)" pad="3"/>
-<connect gate="IC" pin="PD2(INT0/PCINT18)" pad="4"/>
-<connect gate="IC" pin="PD3(INT1/OC2B/PCINT19)" pad="5"/>
-<connect gate="IC" pin="PD4(T0/XCK/PCINT20)" pad="6"/>
-<connect gate="IC" pin="PD5(T1/OC0B/PCINT21)" pad="11"/>
-<connect gate="IC" pin="PD6(AIN0/OC0A/PCINT22)" pad="12"/>
-<connect gate="IC" pin="PD7(AIN1/PCINT23)" pad="13"/>
-<connect gate="IC" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Microchip_By_element14_Batch_1">
 <description>Developed by element14 :&lt;br&gt;
 element14 CAD Library consolidation.ulp
@@ -3263,6 +3136,133 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="voicemod_parts">
+<packages>
+<package name="DIL28">
+<wire x1="-17.78" y1="-3.302" x2="17.78" y2="-3.302" width="0.2" layer="21"/>
+<wire x1="17.78" y1="-3.302" x2="17.78" y2="3.81" width="0.2" layer="21"/>
+<wire x1="17.78" y1="3.81" x2="-17.78" y2="3.81" width="0.2" layer="21"/>
+<wire x1="-17.78" y1="3.81" x2="-17.78" y2="1.524" width="0.2" layer="21"/>
+<wire x1="-17.78" y1="1.524" x2="-16.51" y2="1.524" width="0.2" layer="21"/>
+<wire x1="-16.51" y1="1.524" x2="-16.51" y2="-1.016" width="0.2" layer="21"/>
+<wire x1="-16.51" y1="-1.016" x2="-17.78" y2="-1.016" width="0.2" layer="21"/>
+<wire x1="-17.78" y1="-1.016" x2="-17.78" y2="-3.302" width="0.2" layer="21"/>
+<pad name="1" x="-16.51" y="-4.572" drill="0.889" diameter="1.524" shape="square"/>
+<pad name="2" x="-13.97" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="3" x="-11.43" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="4" x="-8.89" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="5" x="-6.35" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="6" x="-3.81" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="7" x="-1.27" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="8" x="1.27" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="9" x="3.81" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="10" x="6.35" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="11" x="8.89" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="12" x="11.43" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="13" x="13.97" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="14" x="16.51" y="-4.572" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="15" x="16.51" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="16" x="13.97" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="17" x="11.43" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="18" x="8.89" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="19" x="6.35" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="20" x="3.81" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="21" x="1.27" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="22" x="-1.27" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="23" x="-3.81" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="24" x="-6.35" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="25" x="-8.89" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="26" x="-11.43" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="27" x="-13.97" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<pad name="28" x="-16.51" y="5.08" drill="0.889" diameter="1.524" shape="octagon"/>
+<text x="-13.97" y="1.27" size="1.524" layer="25">&gt;NAME</text>
+<text x="-13.97" y="-2.667" size="1.524" layer="27">&gt;VALUE</text>
+<text x="-18.0975" y="-3.302" size="1.27" layer="201" font="vector" ratio="12" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ATMEGA48/88/168/328-PU(DIP28)">
+<wire x1="-30.48" y1="22.86" x2="30.48" y2="22.86" width="0.254" layer="94"/>
+<wire x1="30.48" y1="22.86" x2="30.48" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="30.48" y1="-22.86" x2="-30.48" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-30.48" y1="-22.86" x2="-30.48" y2="22.86" width="0.254" layer="94"/>
+<pin name="PB5(SCK/PCINT5)" x="-33.02" y="7.62" length="short" swaplevel="1"/>
+<pin name="PB7(XTAL2/TOSC2/PCINT7)" x="-33.02" y="2.54" length="short" swaplevel="1"/>
+<pin name="PB6(XTAL1/TOSC1/PCINT6)" x="-33.02" y="5.08" length="short" swaplevel="1"/>
+<pin name="AREF" x="33.02" y="-12.7" length="short" direction="pas" rot="R180"/>
+<pin name="AVCC" x="33.02" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="PB4(MISO/PCINT4)" x="-33.02" y="10.16" length="short" swaplevel="1"/>
+<pin name="PB3(MOSI/OC2A/PCINT3)" x="-33.02" y="12.7" length="short" swaplevel="1"/>
+<pin name="PB2(SS/OC1B/PCINT2)" x="-33.02" y="15.24" length="short" swaplevel="1"/>
+<pin name="PB1(OC1A/PCINT1)" x="-33.02" y="17.78" length="short" swaplevel="1"/>
+<pin name="PB0(ICP1/CLKO/PCINT0)" x="-33.02" y="20.32" length="short" swaplevel="1"/>
+<pin name="PD7(AIN1/PCINT23)" x="33.02" y="2.54" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD6(AIN0/OC0A/PCINT22)" x="33.02" y="5.08" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD5(T1/OC0B/PCINT21)" x="33.02" y="7.62" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD4(T0/XCK/PCINT20)" x="33.02" y="10.16" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD3(INT1/OC2B/PCINT19)" x="33.02" y="12.7" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD2(INT0/PCINT18)" x="33.02" y="15.24" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD1(TXD/PCINT17)" x="33.02" y="17.78" length="short" swaplevel="1" rot="R180"/>
+<pin name="PD0(RXD/PCINT16)" x="33.02" y="20.32" length="short" swaplevel="1" rot="R180"/>
+<pin name="PC5(ADC5/SCL/PCINT13)" x="-33.02" y="-15.24" length="short" swaplevel="1"/>
+<pin name="PC4(ADC4/SDA/PCINT12)" x="-33.02" y="-12.7" length="short" swaplevel="1"/>
+<pin name="PC3(ADC3/PCINT11)" x="-33.02" y="-10.16" length="short" swaplevel="1"/>
+<pin name="PC2(ADC2/PCINT10)" x="-33.02" y="-7.62" length="short" swaplevel="1"/>
+<pin name="PC1(ADC1/PCINT9)" x="-33.02" y="-5.08" length="short" swaplevel="1"/>
+<pin name="PC0(ADC0/PCINT8)" x="-33.02" y="-2.54" length="short" swaplevel="1"/>
+<pin name="PC6(!RESET!/PCINT14)" x="-33.02" y="-17.78" length="short" swaplevel="1"/>
+<text x="12.7" y="-3.175" size="2.54" layer="95" ratio="12" rot="R180">&gt;NAME</text>
+<text x="12.7" y="-6.35" size="2.54" layer="96" ratio="12" rot="R180">&gt;VALUE</text>
+<pin name="GND0" x="33.02" y="-17.78" length="short" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="VCC" x="33.02" y="-15.24" length="short" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="GND1" x="33.02" y="-20.32" length="short" direction="pwr" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ATMEGA48/88/168/328-PU(DIP28)" prefix="IC" uservalue="yes">
+<gates>
+<gate name="IC" symbol="ATMEGA48/88/168/328-PU(DIP28)" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PU" package="DIL28">
+<connects>
+<connect gate="IC" pin="AREF" pad="21"/>
+<connect gate="IC" pin="AVCC" pad="20"/>
+<connect gate="IC" pin="GND0" pad="7"/>
+<connect gate="IC" pin="GND1" pad="22"/>
+<connect gate="IC" pin="PB0(ICP1/CLKO/PCINT0)" pad="14"/>
+<connect gate="IC" pin="PB1(OC1A/PCINT1)" pad="15"/>
+<connect gate="IC" pin="PB2(SS/OC1B/PCINT2)" pad="16"/>
+<connect gate="IC" pin="PB3(MOSI/OC2A/PCINT3)" pad="17"/>
+<connect gate="IC" pin="PB4(MISO/PCINT4)" pad="18"/>
+<connect gate="IC" pin="PB5(SCK/PCINT5)" pad="19"/>
+<connect gate="IC" pin="PB6(XTAL1/TOSC1/PCINT6)" pad="9"/>
+<connect gate="IC" pin="PB7(XTAL2/TOSC2/PCINT7)" pad="10"/>
+<connect gate="IC" pin="PC0(ADC0/PCINT8)" pad="23"/>
+<connect gate="IC" pin="PC1(ADC1/PCINT9)" pad="24"/>
+<connect gate="IC" pin="PC2(ADC2/PCINT10)" pad="25"/>
+<connect gate="IC" pin="PC3(ADC3/PCINT11)" pad="26"/>
+<connect gate="IC" pin="PC4(ADC4/SDA/PCINT12)" pad="27"/>
+<connect gate="IC" pin="PC5(ADC5/SCL/PCINT13)" pad="28"/>
+<connect gate="IC" pin="PC6(!RESET!/PCINT14)" pad="1"/>
+<connect gate="IC" pin="PD0(RXD/PCINT16)" pad="2"/>
+<connect gate="IC" pin="PD1(TXD/PCINT17)" pad="3"/>
+<connect gate="IC" pin="PD2(INT0/PCINT18)" pad="4"/>
+<connect gate="IC" pin="PD3(INT1/OC2B/PCINT19)" pad="5"/>
+<connect gate="IC" pin="PD4(T0/XCK/PCINT20)" pad="6"/>
+<connect gate="IC" pin="PD5(T1/OC0B/PCINT21)" pad="11"/>
+<connect gate="IC" pin="PD6(AIN0/OC0A/PCINT22)" pad="12"/>
+<connect gate="IC" pin="PD7(AIN1/PCINT23)" pad="13"/>
+<connect gate="IC" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3313,7 +3313,6 @@ Source: www.kingbright.com</description>
 <part name="ISP" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
 <part name="X_10" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="P+6" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
-<part name="ATMEGA48A" library="ece411_fixes" deviceset="ATMEGA48/88/168/328-PU(DIP28)" device="PU" value="uC"/>
 <part name="DAC" library="Microchip_By_element14_Batch_1" deviceset="MCP4921-E/P" device=""/>
 <part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
@@ -3326,6 +3325,7 @@ Source: www.kingbright.com</description>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R16" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="R17" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
+<part name="IC1" library="voicemod_parts" deviceset="ATMEGA48/88/168/328-PU(DIP28)" device="PU"/>
 </parts>
 <sheets>
 <sheet>
@@ -3476,10 +3476,6 @@ Source: www.kingbright.com</description>
 <instance part="P+6" gate="VCC" x="53.34" y="-15.24">
 <attribute name="VALUE" x="51.816" y="-14.224" size="1.27" layer="96"/>
 </instance>
-<instance part="ATMEGA48A" gate="IC" x="0" y="25.4" rot="R180">
-<attribute name="NAME" x="-30.48" y="48.895" size="2.54" layer="95" ratio="12"/>
-<attribute name="VALUE" x="25.4" y="49.53" size="2.54" layer="96" ratio="12"/>
-</instance>
 <instance part="DAC" gate="A" x="68.58" y="20.32">
 <attribute name="NAME" x="76.5556" y="34.5186" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="55.8038" y="34.2392" size="2.0828" layer="96" ratio="10" rot="SR0"/>
@@ -3523,6 +3519,10 @@ Source: www.kingbright.com</description>
 <instance part="R17" gate="G$1" x="91.44" y="10.16">
 <attribute name="NAME" x="87.63" y="11.5316" size="1.778" layer="95"/>
 <attribute name="VALUE" x="87.63" y="7.239" size="1.778" layer="96"/>
+</instance>
+<instance part="IC1" gate="IC" x="0" y="25.4" rot="R180">
+<attribute name="NAME" x="-12.7" y="28.575" size="2.54" layer="95" ratio="12"/>
+<attribute name="VALUE" x="-12.7" y="31.75" size="2.54" layer="96" ratio="12"/>
 </instance>
 </instances>
 <busses>
@@ -3599,19 +3599,19 @@ Source: www.kingbright.com</description>
 <pinref part="X_10" gate="G$1" pin="0"/>
 </segment>
 <segment>
-<pinref part="ATMEGA48A" gate="IC" pin="GND1"/>
 <wire x1="-33.02" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="X_9" gate="G$1" pin="0"/>
 <wire x1="-40.64" y1="45.72" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="45.72" x2="-43.18" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="AREF"/>
 <wire x1="-33.02" y1="38.1" x2="-40.64" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="38.1" x2="-40.64" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="GND0"/>
 <wire x1="-40.64" y1="45.72" x2="-40.64" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="43.18" x2="-33.02" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-40.64" y="43.18"/>
 <junction x="-40.64" y="45.72"/>
+<pinref part="IC1" gate="IC" pin="AREF"/>
+<pinref part="IC1" gate="IC" pin="GND0"/>
+<pinref part="IC1" gate="IC" pin="GND1"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="~LDAC"/>
@@ -3841,7 +3841,7 @@ Source: www.kingbright.com</description>
 <pinref part="ISP" gate="1" pin="6"/>
 <wire x1="27.94" y1="-20.32" x2="30.48" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="35.56" y="15.24"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PB4(MISO/PCINT4)"/>
+<pinref part="IC1" gate="IC" pin="PB4(MISO/PCINT4)"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -3858,10 +3858,10 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="-12.7" x2="48.26" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="1" pin="3"/>
 <wire x1="48.26" y1="-22.86" x2="45.72" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PB3(MOSI/OC2A/PCINT3)"/>
 <pinref part="DAC" gate="A" pin="SDI"/>
 <wire x1="50.8" y1="15.24" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
 <junction x="38.1" y="15.24"/>
+<pinref part="IC1" gate="IC" pin="PB3(MOSI/OC2A/PCINT3)"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -3877,9 +3877,9 @@ Source: www.kingbright.com</description>
 <wire x1="25.4" y1="-10.16" x2="25.4" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="1" pin="4"/>
 <wire x1="25.4" y1="-22.86" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PB5(SCK/PCINT5)"/>
 <pinref part="DAC" gate="A" pin="SCK"/>
 <wire x1="50.8" y1="17.78" x2="40.64" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="IC" pin="PB5(SCK/PCINT5)"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -3888,16 +3888,16 @@ Source: www.kingbright.com</description>
 <wire x1="53.34" y1="73.66" x2="-48.26" y2="73.66" width="0.127" layer="91"/>
 <wire x1="-48.26" y1="73.66" x2="-48.26" y2="22.86" width="0.127" layer="91"/>
 <wire x1="-48.26" y1="22.86" x2="-33.02" y2="22.86" width="0.127" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PD7(AIN1/PCINT23)"/>
+<pinref part="IC1" gate="IC" pin="PD7(AIN1/PCINT23)"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <wire x1="33.02" y1="20.32" x2="50.8" y2="20.32" width="0.127" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PB6(XTAL1/TOSC1/PCINT6)"/>
 <pinref part="DAC" gate="A" pin="~CS"/>
 <wire x1="50.8" y1="20.32" x2="53.34" y2="20.32" width="0.127" layer="91"/>
 <junction x="50.8" y="20.32"/>
+<pinref part="IC1" gate="IC" pin="PB6(XTAL1/TOSC1/PCINT6)"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -3908,10 +3908,10 @@ Source: www.kingbright.com</description>
 <wire x1="20.32" y1="-7.62" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="1" pin="2"/>
 <wire x1="20.32" y1="-25.4" x2="30.48" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="PC6(!RESET!/PCINT14)"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="20.32" y="-7.62"/>
+<pinref part="IC1" gate="IC" pin="PC6(!RESET!/PCINT14)"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -3929,15 +3929,15 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="ATMEGA48A" gate="IC" pin="VCC"/>
 <wire x1="-33.02" y1="40.64" x2="-35.56" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="40.64" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="ATMEGA48A" gate="IC" pin="AVCC"/>
 <wire x1="-33.02" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-35.56" y="35.56"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <wire x1="-45.72" y1="30.48" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="30.48" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="IC" pin="AVCC"/>
+<pinref part="IC1" gate="IC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$11" class="0">
