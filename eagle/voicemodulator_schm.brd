@@ -620,6 +620,48 @@ Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternationa
 </package>
 </packages>
 </library>
+<library name="USB_SMT_3">
+<packages>
+<package name="AMPHENOL_10117836-002LF">
+<wire x1="-7.25" y1="3.69" x2="7.25" y2="3.69" width="0.127" layer="51"/>
+<wire x1="7.25" y1="3.69" x2="7.25" y2="-3.43" width="0.127" layer="51"/>
+<wire x1="7.25" y1="-3.43" x2="-7.25" y2="-3.43" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="-3.43" x2="-7.25" y2="3.69" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="2" x2="-7.25" y2="3.69" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="3.69" x2="7.25" y2="3.69" width="0.127" layer="21"/>
+<wire x1="7.25" y1="3.69" x2="7.25" y2="2" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-2" x2="-7.25" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-3.43" x2="7.25" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="7.25" y1="-3.43" x2="7.25" y2="-2" width="0.127" layer="21"/>
+<wire x1="-8.025" y1="3.94" x2="8.025" y2="3.94" width="0.05" layer="39"/>
+<wire x1="8.025" y1="3.94" x2="8.025" y2="1.75" width="0.05" layer="39"/>
+<wire x1="8.025" y1="1.75" x2="8.5" y2="1.75" width="0.05" layer="39"/>
+<wire x1="8.5" y1="1.75" x2="8.5" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="8.5" y1="-1.75" x2="8.025" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="8.025" y1="-1.75" x2="8.025" y2="-3.68" width="0.05" layer="39"/>
+<wire x1="8.025" y1="-3.68" x2="-8.025" y2="-3.68" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="-3.68" x2="-8.025" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="-1.75" x2="-8.5" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="-8.5" y1="-1.75" x2="-8.5" y2="1.75" width="0.05" layer="39"/>
+<wire x1="-8.5" y1="1.75" x2="-8.025" y2="1.75" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="1.75" x2="-8.025" y2="3.94" width="0.05" layer="39"/>
+<text x="-7.62" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-3.5" y="-4.1" radius="0.14141875" width="0.3" layer="21"/>
+<pad name="S1" x="-6.57" y="0" drill="2.3"/>
+<pad name="S2" x="6.57" y="0" drill="2.3"/>
+<pad name="9" x="-4" y="1.44" drill="0.7"/>
+<pad name="8" x="-2" y="1.44" drill="0.7"/>
+<pad name="7" x="0" y="1.44" drill="0.7"/>
+<pad name="6" x="2" y="1.44" drill="0.7"/>
+<pad name="5" x="4" y="1.44" drill="0.7"/>
+<pad name="1" x="-3.5" y="0" drill="0.7" shape="square"/>
+<pad name="2" x="-1" y="0" drill="0.7"/>
+<pad name="3" x="1" y="0" drill="0.7"/>
+<pad name="4" x="3.5" y="0" drill="0.7"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1054,6 +1096,16 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="22" y="75.5" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="22" y="75.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="18.952" y="72.6044" size="1.27" layer="27"/>
+</element>
+<element name="USB_3.0" library="USB_SMT_3" package="AMPHENOL_10117836-002LF" value="10117836-002LF" x="101.5" y="11.5" rot="R270">
+<attribute name="AVAILABILITY" value="Unavailable" x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value=" Usb, 3.0 Type A, Receptacle, SMT " x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Amphenol FCI" x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="10117836-002LF" x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="105.945" y="19.12" size="1.27" layer="25" rot="R270"/>
+<attribute name="PACKAGE" value="None" x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="101.5" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="95.785" y="19.12" size="1.27" layer="27" rot="R270"/>
 </element>
 </elements>
 <signals>

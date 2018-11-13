@@ -3263,6 +3263,102 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="USB_SMT_3">
+<packages>
+<package name="AMPHENOL_10117836-002LF">
+<wire x1="-7.25" y1="3.69" x2="7.25" y2="3.69" width="0.127" layer="51"/>
+<wire x1="7.25" y1="3.69" x2="7.25" y2="-3.43" width="0.127" layer="51"/>
+<wire x1="7.25" y1="-3.43" x2="-7.25" y2="-3.43" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="-3.43" x2="-7.25" y2="3.69" width="0.127" layer="51"/>
+<wire x1="-7.25" y1="2" x2="-7.25" y2="3.69" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="3.69" x2="7.25" y2="3.69" width="0.127" layer="21"/>
+<wire x1="7.25" y1="3.69" x2="7.25" y2="2" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-2" x2="-7.25" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="-3.43" x2="7.25" y2="-3.43" width="0.127" layer="21"/>
+<wire x1="7.25" y1="-3.43" x2="7.25" y2="-2" width="0.127" layer="21"/>
+<wire x1="-8.025" y1="3.94" x2="8.025" y2="3.94" width="0.05" layer="39"/>
+<wire x1="8.025" y1="3.94" x2="8.025" y2="1.75" width="0.05" layer="39"/>
+<wire x1="8.025" y1="1.75" x2="8.5" y2="1.75" width="0.05" layer="39"/>
+<wire x1="8.5" y1="1.75" x2="8.5" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="8.5" y1="-1.75" x2="8.025" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="8.025" y1="-1.75" x2="8.025" y2="-3.68" width="0.05" layer="39"/>
+<wire x1="8.025" y1="-3.68" x2="-8.025" y2="-3.68" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="-3.68" x2="-8.025" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="-1.75" x2="-8.5" y2="-1.75" width="0.05" layer="39"/>
+<wire x1="-8.5" y1="-1.75" x2="-8.5" y2="1.75" width="0.05" layer="39"/>
+<wire x1="-8.5" y1="1.75" x2="-8.025" y2="1.75" width="0.05" layer="39"/>
+<wire x1="-8.025" y1="1.75" x2="-8.025" y2="3.94" width="0.05" layer="39"/>
+<text x="-7.62" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-7.62" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="-3.5" y="-4.1" radius="0.14141875" width="0.3" layer="21"/>
+<pad name="S1" x="-6.57" y="0" drill="2.3"/>
+<pad name="S2" x="6.57" y="0" drill="2.3"/>
+<pad name="9" x="-4" y="1.44" drill="0.7"/>
+<pad name="8" x="-2" y="1.44" drill="0.7"/>
+<pad name="7" x="0" y="1.44" drill="0.7"/>
+<pad name="6" x="2" y="1.44" drill="0.7"/>
+<pad name="5" x="4" y="1.44" drill="0.7"/>
+<pad name="1" x="-3.5" y="0" drill="0.7" shape="square"/>
+<pad name="2" x="-1" y="0" drill="0.7"/>
+<pad name="3" x="1" y="0" drill="0.7"/>
+<pad name="4" x="3.5" y="0" drill="0.7"/>
+</package>
+</packages>
+<symbols>
+<symbol name="10117836-002LF">
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<text x="-5.334" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-10.16" y="12.7" length="middle" direction="pas"/>
+<pin name="2" x="-10.16" y="10.16" length="middle" direction="pas"/>
+<pin name="3" x="-10.16" y="7.62" length="middle" direction="pas"/>
+<pin name="4" x="-10.16" y="5.08" length="middle" direction="pas"/>
+<pin name="5" x="-10.16" y="2.54" length="middle" direction="pas"/>
+<pin name="6" x="-10.16" y="0" length="middle" direction="pas"/>
+<pin name="7" x="-10.16" y="-2.54" length="middle" direction="pas"/>
+<pin name="8" x="-10.16" y="-5.08" length="middle" direction="pas"/>
+<pin name="9" x="-10.16" y="-7.62" length="middle" direction="pas"/>
+<pin name="SHIELD" x="-10.16" y="-12.7" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="10117836-002LF" prefix="J">
+<description>Usb, 3.0 Type A, Receptacle, SMT</description>
+<gates>
+<gate name="G$1" symbol="10117836-002LF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AMPHENOL_10117836-002LF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="SHIELD" pad="S1 S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Usb, 3.0 Type A, Receptacle, SMT "/>
+<attribute name="MF" value="Amphenol FCI"/>
+<attribute name="MP" value="10117836-002LF"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3328,6 +3424,7 @@ Source: www.kingbright.com</description>
 <part name="IC1" library="voicemod_parts" deviceset="ATMEGA48/88/168/328-PU(DIP28)" device="PU"/>
 <part name="R18" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="R19" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
+<part name="USB_3.0" library="USB_SMT_3" deviceset="10117836-002LF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3347,6 +3444,28 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="-5.08" x2="60.96" y2="-5.08" width="1.27" layer="97"/>
 <wire x1="60.96" y1="-5.08" x2="60.96" y2="-33.02" width="1.27" layer="97"/>
 <text x="15.24" y="-2.54" size="1.778" layer="97">ISP Programming</text>
+<wire x1="-48.26" y1="83.82" x2="-48.26" y2="88.9" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="88.9" x2="-48.26" y2="111.76" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="88.9" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
+<wire x1="38.1" y1="88.9" x2="38.1" y2="104.14" width="1.27" layer="97"/>
+<wire x1="38.1" y1="104.14" x2="38.1" y2="116.84" width="1.27" layer="97"/>
+<wire x1="38.1" y1="116.84" x2="12.7" y2="116.84" width="1.27" layer="97"/>
+<wire x1="12.7" y1="116.84" x2="10.16" y2="116.84" width="1.27" layer="97"/>
+<wire x1="12.7" y1="116.84" x2="-12.7" y2="116.84" width="1.27" layer="97"/>
+<wire x1="-12.7" y1="116.84" x2="-15.24" y2="116.84" width="1.27" layer="97"/>
+<wire x1="-12.7" y1="116.84" x2="-20.32" y2="116.84" width="1.27" layer="97"/>
+<wire x1="-20.32" y1="116.84" x2="-40.64" y2="116.84" width="1.27" layer="97"/>
+<wire x1="-20.32" y1="116.84" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="78.74" x2="-48.26" y2="81.28" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="81.28" x2="-48.26" y2="83.82" width="1.27" layer="97"/>
+<wire x1="-22.86" y1="76.2" x2="-48.26" y2="76.2" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="76.2" x2="-48.26" y2="81.28" width="1.27" layer="97"/>
+<wire x1="2.54" y1="76.2" x2="-22.86" y2="76.2" width="1.27" layer="97"/>
+<wire x1="27.94" y1="76.2" x2="12.7" y2="76.2" width="1.27" layer="97"/>
+<wire x1="12.7" y1="76.2" x2="2.54" y2="76.2" width="1.27" layer="97"/>
+<wire x1="38.1" y1="76.2" x2="12.7" y2="76.2" width="1.27" layer="97"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="104.14" width="1.27" layer="97"/>
+<text x="40.64" y="114.3" size="1.778" layer="97">Power Circuit </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-55.88" y="-53.34">
@@ -3533,6 +3652,10 @@ Source: www.kingbright.com</description>
 <instance part="R19" gate="G$1" x="127" y="45.72" rot="R180">
 <attribute name="NAME" x="130.81" y="44.3484" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="130.81" y="48.641" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="USB_3.0" gate="G$1" x="-33.02" y="96.52" rot="R180">
+<attribute name="NAME" x="-27.686" y="80.518" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-27.94" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
