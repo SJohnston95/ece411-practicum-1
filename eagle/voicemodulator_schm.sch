@@ -3425,6 +3425,7 @@ Source: www.kingbright.com</description>
 <part name="R18" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="R19" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="USB_3.0" library="USB_SMT_3" deviceset="10117836-002LF" device=""/>
+<part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3444,27 +3445,10 @@ Source: www.kingbright.com</description>
 <wire x1="15.24" y1="-5.08" x2="60.96" y2="-5.08" width="1.27" layer="97"/>
 <wire x1="60.96" y1="-5.08" x2="60.96" y2="-33.02" width="1.27" layer="97"/>
 <text x="15.24" y="-2.54" size="1.778" layer="97">ISP Programming</text>
-<wire x1="-48.26" y1="83.82" x2="-48.26" y2="88.9" width="1.27" layer="97"/>
-<wire x1="-48.26" y1="88.9" x2="-48.26" y2="111.76" width="1.27" layer="97"/>
-<wire x1="-48.26" y1="88.9" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
-<wire x1="38.1" y1="88.9" x2="38.1" y2="104.14" width="1.27" layer="97"/>
-<wire x1="38.1" y1="104.14" x2="38.1" y2="116.84" width="1.27" layer="97"/>
-<wire x1="38.1" y1="116.84" x2="12.7" y2="116.84" width="1.27" layer="97"/>
-<wire x1="12.7" y1="116.84" x2="10.16" y2="116.84" width="1.27" layer="97"/>
-<wire x1="12.7" y1="116.84" x2="-12.7" y2="116.84" width="1.27" layer="97"/>
-<wire x1="-12.7" y1="116.84" x2="-15.24" y2="116.84" width="1.27" layer="97"/>
-<wire x1="-12.7" y1="116.84" x2="-20.32" y2="116.84" width="1.27" layer="97"/>
-<wire x1="-20.32" y1="116.84" x2="-40.64" y2="116.84" width="1.27" layer="97"/>
-<wire x1="-20.32" y1="116.84" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
-<wire x1="-48.26" y1="78.74" x2="-48.26" y2="81.28" width="1.27" layer="97"/>
-<wire x1="-48.26" y1="81.28" x2="-48.26" y2="83.82" width="1.27" layer="97"/>
-<wire x1="-22.86" y1="76.2" x2="-48.26" y2="76.2" width="1.27" layer="97"/>
-<wire x1="-48.26" y1="76.2" x2="-48.26" y2="81.28" width="1.27" layer="97"/>
-<wire x1="2.54" y1="76.2" x2="-22.86" y2="76.2" width="1.27" layer="97"/>
-<wire x1="27.94" y1="76.2" x2="12.7" y2="76.2" width="1.27" layer="97"/>
-<wire x1="12.7" y1="76.2" x2="2.54" y2="76.2" width="1.27" layer="97"/>
-<wire x1="38.1" y1="76.2" x2="12.7" y2="76.2" width="1.27" layer="97"/>
-<wire x1="38.1" y1="76.2" x2="38.1" y2="104.14" width="1.27" layer="97"/>
+<wire x1="-48.26" y1="76.2" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="116.84" width="1.27" layer="97"/>
+<wire x1="38.1" y1="116.84" x2="-48.26" y2="116.84" width="1.27" layer="97"/>
+<wire x1="38.1" y1="76.2" x2="-48.26" y2="76.2" width="1.27" layer="97"/>
 <text x="40.64" y="114.3" size="1.778" layer="97">Power Circuit </text>
 </plain>
 <instances>
@@ -3657,6 +3641,7 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="-27.686" y="80.518" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-27.94" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="X_11" gate="G$1" x="-17.78" y="81.28"/>
 </instances>
 <busses>
 </busses>
@@ -3759,6 +3744,44 @@ Source: www.kingbright.com</description>
 <pinref part="MIC_JACK1" gate="G$1" pin="1"/>
 <pinref part="X_3" gate="G$1" pin="0"/>
 <wire x1="167.64" y1="2.54" x2="167.64" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="USB_3.0" gate="G$1" pin="2"/>
+<pinref part="X_11" gate="G$1" pin="0"/>
+<wire x1="-22.86" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="3"/>
+<wire x1="-17.78" y1="81.28" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="86.36" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="88.9" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="4"/>
+<wire x1="-22.86" y1="91.44" x2="-17.78" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="91.44" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-17.78" y="88.9"/>
+<junction x="-17.78" y="86.36"/>
+<pinref part="USB_3.0" gate="G$1" pin="7"/>
+<wire x1="-17.78" y1="91.44" x2="-17.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="99.06" x2="-22.86" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="9"/>
+<wire x1="-22.86" y1="104.14" x2="-17.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="104.14" x2="-17.78" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="6"/>
+<wire x1="-17.78" y1="101.6" x2="-17.78" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="96.52" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="8"/>
+<wire x1="-22.86" y1="101.6" x2="-17.78" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="USB_3.0" gate="G$1" pin="5"/>
+<wire x1="-17.78" y1="99.06" x2="-17.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="96.52" x2="-17.78" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="93.98" x2="-22.86" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-17.78" y="101.6"/>
+<junction x="-17.78" y="99.06"/>
+<junction x="-17.78" y="96.52"/>
+<junction x="-17.78" y="93.98"/>
+<junction x="-17.78" y="91.44"/>
+<pinref part="USB_3.0" gate="G$1" pin="SHIELD"/>
+<wire x1="-22.86" y1="109.22" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="109.22" x2="-17.78" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-17.78" y="104.14"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3958,6 +3981,11 @@ Source: www.kingbright.com</description>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="-45.72" y1="38.1" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="USB_3.0" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
+<label x="-2.54" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
