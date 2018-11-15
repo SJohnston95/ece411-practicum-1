@@ -3608,9 +3608,9 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="40.132" y="51.816" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="48.895" y="46.228" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="DAC_POWER" gate="G$1" x="45.72" y="35.56">
+<instance part="DAC_POWER" gate="G$1" x="45.72" y="33.02">
 <attribute name="NAME" x="70.612" y="39.116" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="51.435" y="30.988" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="51.435" y="28.448" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="AMEGA_POWER" gate="G$1" x="-40.64" y="53.34">
 <attribute name="NAME" x="-18.288" y="51.816" size="1.778" layer="95" rot="R180"/>
@@ -3653,9 +3653,9 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="-39.624" y="30.099" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-39.624" y="35.179" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="C6" gate="G$1" x="50.8" y="35.56" rot="R180">
-<attribute name="NAME" x="49.276" y="32.639" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="49.276" y="37.719" size="1.778" layer="96" font="vector" rot="R180"/>
+<instance part="C6" gate="G$1" x="53.34" y="35.56" rot="R180">
+<attribute name="NAME" x="51.816" y="32.639" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="51.816" y="37.719" size="1.778" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="C7" gate="G$1" x="48.26" y="45.72" rot="R270">
 <attribute name="NAME" x="51.181" y="44.196" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -3767,19 +3767,9 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="7.62" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <junction x="48.26" y="7.62"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="DAC_POWER" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="DAC_POWER" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="38.1" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="DAC" gate="A" pin="VREFA"/>
-<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="22.86" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
-<junction x="48.26" y="38.1"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="27.94" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="MIC_JACK1" gate="G$1" pin="1"/>
@@ -4029,6 +4019,20 @@ Source: www.kingbright.com</description>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 <wire x1="-5.08" y1="83.82" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="DAC_POWER" gate="G$1" pin="A"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="DAC" gate="A" pin="VREFA"/>
+<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="22.86" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="35.56" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<junction x="48.26" y="35.56"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -4179,7 +4183,8 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="DAC" gate="A" pin="VDD"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="27.94" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="30.48" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -4200,10 +4205,6 @@ Source: www.kingbright.com</description>
 <approved hash="202,1,83.82,63.5,ADC,CH4,,,,"/>
 <approved hash="202,1,83.82,68.58,ADC,CH5,,,,"/>
 <approved hash="202,1,83.82,73.66,ADC,CH6,,,,"/>
-<approved hash="104,1,53.34,43.18,ADC,VDD,N$18,,,"/>
-<approved hash="104,1,53.34,53.34,ADC,AGND,0,,,"/>
-<approved hash="104,1,53.34,78.74,ADC,DGND,0,,,"/>
-<approved hash="104,1,50.8,27.94,DAC,VDD,VCC,,,"/>
 </errors>
 </schematic>
 </drawing>
