@@ -3426,6 +3426,10 @@ Source: www.kingbright.com</description>
 <part name="R19" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
 <part name="USB_3.0" library="USB_SMT_3" deviceset="10117836-002LF" device=""/>
 <part name="X_11" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
+<part name="P+7" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="VCC" device=""/>
+<part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="10nF"/>
+<part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="10nF"/>
+<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="10nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3600,17 +3604,17 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="1.27" y="-6.2484" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.27" y="-10.541" size="1.778" layer="96"/>
 </instance>
-<instance part="ADC_POWER" gate="G$1" x="45.72" y="48.26">
-<attribute name="NAME" x="49.276" y="43.688" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="51.435" y="43.688" size="1.778" layer="96" rot="R90"/>
+<instance part="ADC_POWER" gate="G$1" x="43.18" y="50.8">
+<attribute name="NAME" x="40.132" y="51.816" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="48.895" y="46.228" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="DAC_POWER" gate="G$1" x="45.72" y="35.56">
-<attribute name="NAME" x="49.276" y="30.988" size="1.778" layer="95" rot="R90"/>
+<attribute name="NAME" x="70.612" y="39.116" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="51.435" y="30.988" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="AMEGA_POWER" gate="G$1" x="-45.72" y="35.56">
-<attribute name="NAME" x="-42.164" y="30.988" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-40.005" y="30.988" size="1.778" layer="96" rot="R90"/>
+<instance part="AMEGA_POWER" gate="G$1" x="-40.64" y="53.34">
+<attribute name="NAME" x="-18.288" y="51.816" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-34.925" y="48.768" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="MIC_JACK1" gate="G$1" x="182.88" y="5.08" rot="R180">
 <attribute name="NAME" x="193.0489" y="-2.54665" size="2.54221875" layer="95" rot="R180"/>
@@ -3642,11 +3646,26 @@ Source: www.kingbright.com</description>
 <attribute name="VALUE" x="-27.94" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="X_11" gate="G$1" x="-17.78" y="81.28"/>
+<instance part="P+7" gate="VCC" x="-5.08" y="88.9">
+<attribute name="VALUE" x="-6.604" y="89.916" size="1.27" layer="96"/>
+</instance>
+<instance part="C5" gate="G$1" x="-38.1" y="33.02" rot="R180">
+<attribute name="NAME" x="-39.624" y="30.099" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="-39.624" y="35.179" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C6" gate="G$1" x="50.8" y="35.56" rot="R180">
+<attribute name="NAME" x="49.276" y="32.639" size="1.778" layer="95" font="vector" rot="R180"/>
+<attribute name="VALUE" x="49.276" y="37.719" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C7" gate="G$1" x="48.26" y="45.72" rot="R270">
+<attribute name="NAME" x="51.181" y="44.196" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="46.101" y="44.196" size="1.778" layer="96" font="vector" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="0" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="MIC_JACK" gate="G$1" pin="1"/>
 <pinref part="X_1" gate="G$1" pin="0"/>
@@ -3708,6 +3727,13 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="76.2" x2="48.26" y2="78.74" width="0.127" layer="91"/>
 <wire x1="48.26" y1="78.74" x2="50.8" y2="78.74" width="0.127" layer="91"/>
 <junction x="50.8" y="78.74"/>
+<pinref part="ADC_POWER" gate="G$1" pin="C"/>
+<wire x1="43.18" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="45.72" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="71.12" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="78.74" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="1" pin="1"/>
@@ -3729,6 +3755,8 @@ Source: www.kingbright.com</description>
 <pinref part="IC1" gate="IC" pin="AREF"/>
 <pinref part="IC1" gate="IC" pin="GND0"/>
 <pinref part="IC1" gate="IC" pin="GND1"/>
+<pinref part="AMEGA_POWER" gate="G$1" pin="C"/>
+<wire x1="-40.64" y1="45.72" x2="-40.64" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DAC" gate="A" pin="~LDAC"/>
@@ -3739,6 +3767,19 @@ Source: www.kingbright.com</description>
 <wire x1="48.26" y1="7.62" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 <junction x="48.26" y="7.62"/>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="DAC_POWER" gate="G$1" pin="A"/>
+<wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="DAC_POWER" gate="G$1" pin="C"/>
+<wire x1="45.72" y1="38.1" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="DAC" gate="A" pin="VREFA"/>
+<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="22.86" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<junction x="48.26" y="38.1"/>
+<wire x1="45.72" y1="30.48" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="MIC_JACK1" gate="G$1" pin="1"/>
@@ -3958,34 +3999,35 @@ Source: www.kingbright.com</description>
 <wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ADC_POWER" gate="G$1" pin="A"/>
+<pinref part="ADC" gate="G$1" pin="VREF"/>
+<wire x1="53.34" y1="48.26" x2="48.26" y2="48.26" width="0.127" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="45.72" y1="50.8" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="DAC_POWER" gate="G$1" pin="A"/>
-<wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="DAC_POWER" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="38.1" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="DAC" gate="A" pin="VDD"/>
-<wire x1="50.8" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="DAC" gate="A" pin="VREFA"/>
-<wire x1="50.8" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="22.86" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
-<junction x="48.26" y="27.94"/>
+<pinref part="ADC_POWER" gate="G$1" pin="A"/>
+<wire x1="43.18" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="53.34" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="48.26" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<junction x="45.72" y="48.26"/>
+<pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="AMEGA_POWER" gate="G$1" pin="A"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="-45.72" y1="38.1" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="55.88" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-38.1" y="25.4"/>
+<pinref part="IC1" gate="IC" pin="AVCC"/>
+<wire x1="-38.1" y1="25.4" x2="-33.02" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="25.4" x2="-33.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="27.94" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="25.4" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="USB_3.0" gate="G$1" pin="1"/>
 <wire x1="-22.86" y1="83.82" x2="-5.08" y2="83.82" width="0.1524" layer="91"/>
-<label x="-2.54" y="83.82" size="1.778" layer="95"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<wire x1="-5.08" y1="83.82" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4045,9 +4087,11 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="ADC" gate="G$1" pin="CS"/>
 <wire x1="53.34" y1="73.66" x2="-48.26" y2="73.66" width="0.127" layer="91"/>
-<wire x1="-48.26" y1="73.66" x2="-48.26" y2="22.86" width="0.127" layer="91"/>
-<wire x1="-48.26" y1="22.86" x2="-33.02" y2="22.86" width="0.127" layer="91"/>
+<wire x1="-48.26" y1="73.66" x2="-48.26" y2="-25.4" width="0.127" layer="91"/>
 <pinref part="IC1" gate="IC" pin="PD7(AIN1/PCINT23)"/>
+<wire x1="-33.02" y1="22.86" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="22.86" x2="-35.56" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-25.4" x2="-48.26" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -4071,32 +4115,6 @@ Source: www.kingbright.com</description>
 <wire x1="20.32" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="20.32" y="-7.62"/>
 <pinref part="IC1" gate="IC" pin="PC6(!RESET!/PCINT14)"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="ADC" gate="G$1" pin="VREF"/>
-<wire x1="53.34" y1="48.26" x2="50.8" y2="48.26" width="0.127" layer="91"/>
-<wire x1="50.8" y1="48.26" x2="50.8" y2="43.18" width="0.127" layer="91"/>
-<pinref part="ADC" gate="G$1" pin="VDD"/>
-<wire x1="50.8" y1="43.18" x2="53.34" y2="43.18" width="0.127" layer="91"/>
-<wire x1="48.26" y1="43.18" x2="50.8" y2="43.18" width="0.127" layer="91"/>
-<junction x="50.8" y="43.18"/>
-<pinref part="ADC_POWER" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<wire x1="-33.02" y1="40.64" x2="-35.56" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="40.64" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-35.56" y="35.56"/>
-<pinref part="AMEGA_POWER" gate="G$1" pin="C"/>
-<wire x1="-45.72" y1="30.48" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-35.56" y1="30.48" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="IC" pin="AVCC"/>
-<pinref part="IC1" gate="IC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4146,6 +4164,29 @@ Source: www.kingbright.com</description>
 <wire x1="167.64" y1="73.66" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="45.72" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
+<junction x="167.64" y="73.66"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="IC1" gate="IC" pin="VCC"/>
+<wire x1="-33.02" y1="40.64" x2="-38.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="40.64" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="DAC" gate="A" pin="VDD"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="27.94" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="ADC" gate="G$1" pin="VDD"/>
+<wire x1="53.34" y1="43.18" x2="53.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -4159,6 +4200,10 @@ Source: www.kingbright.com</description>
 <approved hash="202,1,83.82,63.5,ADC,CH4,,,,"/>
 <approved hash="202,1,83.82,68.58,ADC,CH5,,,,"/>
 <approved hash="202,1,83.82,73.66,ADC,CH6,,,,"/>
+<approved hash="104,1,53.34,43.18,ADC,VDD,N$18,,,"/>
+<approved hash="104,1,53.34,53.34,ADC,AGND,0,,,"/>
+<approved hash="104,1,53.34,78.74,ADC,DGND,0,,,"/>
+<approved hash="104,1,50.8,27.94,DAC,VDD,VCC,,,"/>
 </errors>
 </schematic>
 </drawing>
