@@ -3414,9 +3414,9 @@ Source: www.kingbright.com</description>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="R15" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
+<part name="ADC_POWER" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
+<part name="DAC_POWER" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
+<part name="AMEGA_POWER" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="10MM" package3d_urn="urn:adsk.eagle:package:15828/1"/>
 <part name="MIC_JACK1" library="SJ1-3523N" deviceset="SJ1-3523N" device=""/>
 <part name="X_3" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="R16" library="resistor-shunt" library_urn="urn:adsk.eagle:library:346" deviceset="SMR-WAV" device="" package3d_urn="urn:adsk.eagle:package:25223/1"/>
@@ -3600,15 +3600,15 @@ Source: www.kingbright.com</description>
 <attribute name="NAME" x="1.27" y="-6.2484" size="1.778" layer="95"/>
 <attribute name="VALUE" x="1.27" y="-10.541" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="45.72" y="48.26">
+<instance part="ADC_POWER" gate="G$1" x="45.72" y="48.26">
 <attribute name="NAME" x="49.276" y="43.688" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="43.688" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED2" gate="G$1" x="45.72" y="35.56">
+<instance part="DAC_POWER" gate="G$1" x="45.72" y="35.56">
 <attribute name="NAME" x="49.276" y="30.988" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="30.988" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED3" gate="G$1" x="-45.72" y="35.56">
+<instance part="AMEGA_POWER" gate="G$1" x="-45.72" y="35.56">
 <attribute name="NAME" x="-42.164" y="30.988" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-40.005" y="30.988" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -3958,15 +3958,15 @@ Source: www.kingbright.com</description>
 <wire x1="0" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="ADC_POWER" gate="G$1" pin="A"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="45.72" y1="50.8" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="DAC_POWER" gate="G$1" pin="A"/>
 <wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="DAC_POWER" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="38.1" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="DAC" gate="A" pin="VDD"/>
 <wire x1="50.8" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
@@ -3978,7 +3978,7 @@ Source: www.kingbright.com</description>
 <junction x="48.26" y="27.94"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="AMEGA_POWER" gate="G$1" pin="A"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="-45.72" y1="38.1" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
 </segment>
@@ -4082,7 +4082,7 @@ Source: www.kingbright.com</description>
 <wire x1="50.8" y1="43.18" x2="53.34" y2="43.18" width="0.127" layer="91"/>
 <wire x1="48.26" y1="43.18" x2="50.8" y2="43.18" width="0.127" layer="91"/>
 <junction x="50.8" y="43.18"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="ADC_POWER" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="43.18" x2="48.26" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4092,7 +4092,7 @@ Source: www.kingbright.com</description>
 <wire x1="-35.56" y1="40.64" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="35.56" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-35.56" y="35.56"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="AMEGA_POWER" gate="G$1" pin="C"/>
 <wire x1="-45.72" y1="30.48" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-35.56" y1="30.48" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="IC" pin="AVCC"/>
