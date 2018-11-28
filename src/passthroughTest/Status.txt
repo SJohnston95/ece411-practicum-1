@@ -1,0 +1,6 @@
+This document is to keep track of passthroughTest status.
+What's been done, what doesn't work, what needs to be done.
+
+Needs to be added to an Atmel Studio project.
+
+Using ?CAPS? to indicate where comments need to be added or modified for clarity.
