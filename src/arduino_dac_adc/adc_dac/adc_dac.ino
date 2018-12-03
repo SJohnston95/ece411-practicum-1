@@ -5,28 +5,24 @@
 #define CS_ADC 4 // control chip select on DAC
 #define CS_DAC 5 // control chip select on DAC
 
-#define ADC_REF 000 //ADC reference voltage in mV
-#define ADC_CLK     1600000  // SPI clock 1.6MHz
+#define ADC_REF 5000 //ADC reference voltage in mV
+#define ADC_CLK     2000  // SPI clock 1.6MHz
 
 MCP3208 myAdc(ADC_REF, CS_ADC);
 MCP492X myDac(CS_DAC);
 
 void setup() {
 
-  Serial.begin(9600);
-  Serial.println("Starting!");
-
   //Pins
   pinMode(CS_ADC, OUTPUT);
-  pinMode(CS_DAC, OUTPUT);
-
+  //pinMode(CS_DAC, OUTPUT);
+ 
   //ADC Setup
-  //myAdc.calibrate(MCP3208::SINGLE_0);
-  SPISettings settings(ADC_CLK, MSBFIRST, SPI_MODE0);
-  SPI.begin();
-  SPI.beginTransaction(settings);
+  //SPISettings settings(ADC_CLK, MSBFIRST, SPI_MODE0);
+  //SPI.begin();
+  //SPI.beginTransaction(settings);
 
-  //DAC Setup
+ //DAC Setup
   myDac.begin();
   
 }
@@ -34,15 +30,12 @@ void setup() {
 void loop() {
   
   //Variables
-  uint16_t data;
+  unsigned int data;
 
   //Read
-  //data = analogRead(A0);
   data = myAdc.read(MCP3208::SINGLE_0);
-
-  Serial.println(data);
   
   //Write
-  myDac.analogWrite(0,0,0,1,data);
+  myDac.analogWrite(0,0,1,1,(data));
 
 }

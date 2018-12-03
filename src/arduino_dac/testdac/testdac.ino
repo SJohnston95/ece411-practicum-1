@@ -7,7 +7,7 @@ MCP492X myDac(CS_DAC);
 void setup() {
   // put your setup code here, to run once:
   myDac.begin();
-  analogReference(INTERNAL);
+  //analogReference(INTERNAL);
 }
 
 void loop() {
