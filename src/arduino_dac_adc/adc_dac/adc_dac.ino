@@ -2,7 +2,7 @@
 #include <SPI.h>
 #include <Mcp3208.h>
 
-#define CS_ADC 4 // control chip select on DAC
+#define CS_ADC 7 // control chip select on ADC
 #define CS_DAC 5 // control chip select on DAC
 
 #define ADC_REF 5000 //ADC reference voltage in mV
@@ -33,7 +33,7 @@ void loop() {
   unsigned int data;
 
   //Read
-  data = myAdc.read(MCP3208::SINGLE_0);
+  data = myAdc.read(MCP3208::SINGLE_7);
   
   //Write
   myDac.analogWrite(0,0,1,1,(data));
